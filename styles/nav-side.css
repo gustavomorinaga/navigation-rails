@@ -1,8 +1,10 @@
 nav.nav-side > ul > li > a {
 	position: relative;
+
+	transition: color 0.2s ease-in-out;
 }
 
-nav.nav-side > ul > li > a::after {
+nav.nav-side > ul > li > a::before {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -14,6 +16,17 @@ nav.nav-side > ul > li > a::after {
 
 	background-color: transparent;
 	border-radius: 1rem 0 0 1rem;
+
+	transition: background-color 0.2s ease-in-out;
+}
+
+nav.nav-side > ul > li:not(.active):hover > a {
+	fill: var(--primary);
+	color: var(--primary);
+}
+
+nav.nav-side > ul > li:not(.active):hover > a::before {
+	background-color: var(--bg-primary-alt);
 }
 
 nav.nav-side > ul > li.active > a {
@@ -21,6 +34,6 @@ nav.nav-side > ul > li.active > a {
 	color: var(--primary);
 }
 
-nav.nav-side > ul > li.active > a::after {
+nav.nav-side > ul > li.active > a::before {
 	background-color: var(--primary);
 }

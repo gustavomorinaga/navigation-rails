@@ -1,9 +1,13 @@
+nav.nav-rounded > a.exit,
 nav.nav-rounded > ul > li > a {
 	position: relative;
 	z-index: 0;
+
+	transition: color 0.2s ease-in-out;
 }
 
-nav.nav-rounded > ul > li > a::after {
+nav.nav-rounded > a.exit::before,
+nav.nav-rounded > ul > li > a::before {
 	content: '';
 	position: absolute;
 	inset: 0 0.5rem;
@@ -11,6 +15,21 @@ nav.nav-rounded > ul > li > a::after {
 
 	background-color: transparent;
 	border-radius: 50%;
+
+	transition: background-color 0.2s ease-in-out;
+}
+
+nav.nav-rounded > ul > li:not(.active):hover > a {
+	fill: var(--primary);
+	color: var(--primary);
+}
+
+nav.nav-rounded > a.exit:hover::before {
+	background-color: var(--bg-warn-light);
+}
+
+nav.nav-rounded > ul > li:not(.active):hover > a::before {
+	background-color: var(--bg-primary-light);
 }
 
 nav.nav-rounded > ul > li.active > a {
@@ -18,6 +37,6 @@ nav.nav-rounded > ul > li.active > a {
 	color: var(--primary);
 }
 
-nav.nav-rounded > ul > li.active > a::after {
-	background-color: var(--bg-primary-light);
+nav.nav-rounded > ul > li.active > a::before {
+	background-color: var(--bg-primary-alt);
 }

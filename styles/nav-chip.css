@@ -1,9 +1,13 @@
-nav.nav-chip > ul > li {
+nav.nav-chip > a.exit,
+nav.nav-chip > ul > li > a {
 	position: relative;
 	z-index: 0;
+
+	transition: color 0.2s ease-in-out;
 }
 
-nav.nav-chip > ul > li::before {
+nav.nav-chip > a.exit::before,
+nav.nav-chip > ul > li > a::before {
 	content: '';
 	position: absolute;
 	inset: 0;
@@ -14,6 +18,21 @@ nav.nav-chip > ul > li::before {
 
 	background-color: transparent;
 	border-radius: 0 0.5rem 0.5rem 0;
+
+	transition: background-color 0.2s ease-in-out;
+}
+
+nav.nav-chip > ul > li:not(.active):hover > a {
+	fill: var(--primary);
+	color: var(--primary);
+}
+
+nav.nav-chip > a.exit:hover::before {
+	background-color: var(--bg-warn-light);
+}
+
+nav.nav-chip > ul > li:not(.active):hover > a::before {
+	background-color: var(--bg-primary-light);
 }
 
 nav.nav-chip > ul > li.active > a {
@@ -21,6 +40,6 @@ nav.nav-chip > ul > li.active > a {
 	color: #ffffff;
 }
 
-nav.nav-chip > ul > li.active::before {
+nav.nav-chip > ul > li.active > a::before {
 	background-color: var(--primary);
 }

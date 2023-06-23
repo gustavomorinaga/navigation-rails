@@ -1,8 +1,10 @@
 nav.nav-dot > ul > li > a {
 	position: relative;
+
+	transition: color 0.2s ease-in-out;
 }
 
-nav.nav-dot > ul > li > a::after {
+nav.nav-dot > ul > li > a::before {
 	content: '';
 	position: absolute;
 	inset: auto 0 0 1px;
@@ -15,11 +17,16 @@ nav.nav-dot > ul > li > a::after {
 	border-radius: 50%;
 }
 
+nav.nav-dot > ul > li:not(.active):hover > a {
+	fill: var(--primary);
+	color: var(--primary);
+}
+
 nav.nav-dot > ul > li.active > a {
 	fill: var(--primary);
 	color: var(--primary);
 }
 
-nav.nav-dot > ul > li.active > a::after {
+nav.nav-dot > ul > li.active > a::before {
 	background-color: var(--primary);
 }

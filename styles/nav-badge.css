@@ -1,8 +1,17 @@
+nav.nav-badge > ul > li > a {
+	transition: color 0.2s ease-in-out;
+}
+
 nav.nav-badge > ul > li.active > a {
 	fill: var(--primary);
 	color: var(--primary);
 
 	margin: -0.25rem 0 -0.85rem;
+}
+
+nav.nav-badge > ul > li:not(.active):hover > a {
+	fill: var(--primary);
+	color: var(--primary);
 }
 
 nav.nav-badge > ul > li.active > a > span {
