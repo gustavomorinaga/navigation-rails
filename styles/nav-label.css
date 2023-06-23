@@ -1,0 +1,10 @@
+nav.nav-label > ul > li.active > a {
+	fill: #8660f2;
+	color: #8660f2;
+
+	margin: -0.25rem 0 -0.85rem;
+}
+
+nav.nav-label > ul > li.active > a > span {
+	display: block;
+}

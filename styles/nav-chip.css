@@ -1,0 +1,26 @@
+nav.nav-chip > ul > li {
+	position: relative;
+	z-index: 0;
+}
+
+nav.nav-chip > ul > li::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+
+	display: block;
+	margin-left: -1rem;
+
+	background-color: transparent;
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+
+nav.nav-chip > ul > li.active > a {
+	fill: #8660f2;
+	color: #ffffff;
+}
+
+nav.nav-chip > ul > li.active::before {
+	background-color: #8660f2;
+}

@@ -1,0 +1,25 @@
+nav.nav-dot > ul > li > a {
+	position: relative;
+}
+
+nav.nav-dot > ul > li > a::after {
+	content: '';
+	position: absolute;
+	inset: auto 0 0 1px;
+
+	width: 0.3rem;
+	height: 0.3rem;
+	margin: 0 auto;
+
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+nav.nav-dot > ul > li.active > a {
+	fill: #8660f2;
+	color: #8660f2;
+}
+
+nav.nav-dot > ul > li.active > a::after {
+	background-color: #8660f2;
+}

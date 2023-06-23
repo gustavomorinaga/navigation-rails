@@ -1,0 +1,10 @@
+nav.nav-ghost > ul > li > a {
+	background-color: transparent;
+	border-radius: 0.5rem;
+}
+
+nav.nav-ghost > ul > li.active > a {
+	fill: #8660f2;
+	color: #8660f2;
+	background-color: #f4f1fb;
+}
