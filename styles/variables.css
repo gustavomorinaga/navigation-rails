@@ -1,0 +1,15 @@
+:root {
+	--primary: #8660f2;
+	--accent: #efa059;
+	--warn: #ff828c;
+
+	--bg: #dddddd;
+	--bg-primary-light: #f4f1fb;
+	--bg-primary-alt: #d9ddfe;
+	--bg-nav: #ffffff;
+	--bg-divider: #f5f5f5;
+
+	--shadow: #dddddd;
+
+	--text-color: #3e3e3e;
+}

@@ -4,7 +4,7 @@ nav.nav-ghost > ul > li > a {
 }
 
 nav.nav-ghost > ul > li.active > a {
-	fill: #8660f2;
-	color: #8660f2;
-	background-color: #f4f1fb;
+	fill: var(--primary);
+	color: var(--primary);
+	background-color: var(--bg-primary-light);
 }

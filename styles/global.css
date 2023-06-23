@@ -9,6 +9,7 @@ main {
 	max-width: 1024px;
 	min-height: 100vh;
 	margin: 0 auto;
+	padding: 2rem;
 
 	font-family: 'Roboto', sans-serif;
 
@@ -20,14 +21,15 @@ main > h1 {
 
 	font-size: 3rem;
 	font-weight: bold;
-	background: -webkit-linear-gradient(left, #8660f2, #efa059);
+	background: -webkit-linear-gradient(left, var(--primary), var(--accent));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	filter: drop-shadow(3px 3px 10px #dddddd);
+	filter: drop-shadow(3px 3px 10px var(--shadow));
 }
 
 main > ul {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 2rem;
 }
 
@@ -46,8 +48,8 @@ main > ul > li > span.count {
 	margin: 0 auto;
 	padding: 0.5rem 1rem;
 
-	background-color: #d9ddfe;
-	border: 1px solid #e2e5f9;
+	color: var(--text-color);
+	background-color: var(--bg-primary-alt);
 	border-radius: 50%;
 
 	font-weight: bold;
@@ -65,9 +67,9 @@ nav {
 	padding: 1rem;
 	overflow: hidden;
 
-	background-color: #ffffff;
+	background-color: var(--bg-nav);
 	border-radius: 1rem;
-	box-shadow: 3px 3px 10px 3px #dddddd;
+	box-shadow: 3px 3px 10px 3px var(--shadow);
 }
 
 nav > img.logo {
@@ -77,7 +79,7 @@ nav > img.logo {
 
 nav > hr {
 	margin: 0 -1rem;
-	border: solid 1px #f5f5f5;
+	border: solid 1px var(--bg-divider);
 }
 
 nav a {
@@ -94,8 +96,8 @@ nav > a.exit {
 	margin-top: auto;
 	padding: 0.5rem 0;
 
-	fill: #ff828c;
-	color: #ff828c;
+	fill: var(--warn);
+	color: var(--warn);
 }
 
 nav > ul {
@@ -106,7 +108,7 @@ nav > ul {
 
 nav > ul > li > a {
 	padding: 0.5rem 1rem;
-	color: #3e3e3e;
+	color: var(--text-color);
 }
 
 nav > a.exit > span,

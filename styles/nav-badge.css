@@ -1,6 +1,6 @@
 nav.nav-badge > ul > li.active > a {
-	fill: #8660f2;
-	color: #8660f2;
+	fill: var(--primary);
+	color: var(--primary);
 
 	margin: -0.25rem 0 -0.85rem;
 }
@@ -11,6 +11,6 @@ nav.nav-badge > ul > li.active > a > span {
 	padding: 0 1rem;
 
 	color: #ffffff;
-	background-color: #8660f2;
+	background-color: var(--primary);
 	border-radius: 1rem;
 }

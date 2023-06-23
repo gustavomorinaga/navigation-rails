@@ -17,10 +17,10 @@ nav.nav-chip > ul > li::before {
 }
 
 nav.nav-chip > ul > li.active > a {
-	fill: #8660f2;
+	fill: var(--primary);
 	color: #ffffff;
 }
 
 nav.nav-chip > ul > li.active::before {
-	background-color: #8660f2;
+	background-color: var(--primary);
 }

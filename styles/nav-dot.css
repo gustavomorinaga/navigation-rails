@@ -16,10 +16,10 @@ nav.nav-dot > ul > li > a::after {
 }
 
 nav.nav-dot > ul > li.active > a {
-	fill: #8660f2;
-	color: #8660f2;
+	fill: var(--primary);
+	color: var(--primary);
 }
 
 nav.nav-dot > ul > li.active > a::after {
-	background-color: #8660f2;
+	background-color: var(--primary);
 }

@@ -14,10 +14,10 @@ nav.nav-rounded > ul > li > a::after {
 }
 
 nav.nav-rounded > ul > li.active > a {
-	fill: #8660f2;
-	color: #8660f2;
+	fill: var(--primary);
+	color: var(--primary);
 }
 
 nav.nav-rounded > ul > li.active > a::after {
-	background-color: #f4f1fb;
+	background-color: var(--bg-primary-light);
 }
