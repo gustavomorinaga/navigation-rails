@@ -106,6 +106,41 @@ nav > ul {
 	gap: 1rem;
 }
 
+nav > ul > li {
+	position: relative;
+}
+
+nav > ul > li.notification::before {
+	content: '';
+	position: absolute;
+	inset: 0 0 auto auto;
+
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 0.5rem;
+	border-radius: 50%;
+	background-color: var(--warn);
+
+	pointer-events: none;
+
+	animation: pulse 1s ease-out infinite;
+}
+
+nav > ul > li.notification::after {
+	content: '';
+	position: absolute;
+	inset: 0 0 auto auto;
+
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 0.5rem;
+	border-radius: 50%;
+	background-color: var(--warn);
+	outline: solid 1px var(--bg-nav);
+
+	pointer-events: none;
+}
+
 nav > ul > li > a {
 	padding: 0.5rem 1rem;
 	color: var(--text-color);
@@ -116,4 +151,15 @@ nav > ul > li > a > span {
 	display: none;
 	font-size: 0.75rem;
 	font-weight: bold;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
 }
