@@ -35,11 +35,33 @@ nav.nav-chip > ul > li:not(.active):hover > a::before {
 	background-color: var(--bg-primary-light);
 }
 
+nav.nav-chip > ul > li.active {
+	z-index: 1;
+}
+
 nav.nav-chip > ul > li.active > a {
 	fill: var(--primary);
 	color: #ffffff;
+	transition: none;
 }
 
 nav.nav-chip > ul > li.active > a::before {
 	background-color: var(--primary);
+	transition: none;
+}
+
+nav.nav-chip > ul > li.chip {
+	position: absolute;
+	inset: 0;
+
+	display: block;
+	height: 2.5rem;
+	margin-left: -1rem;
+
+	background-color: var(--primary);
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+
+nav.nav-chip > ul > li:not(.chip) {
+	z-index: 1;
 }
