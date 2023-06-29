@@ -13,6 +13,7 @@ nav.nav-rounded > ul > li > a::before {
 	inset: 0 0.5rem;
 	z-index: -1;
 
+	aspect-ratio: 1/1;
 	background-color: transparent;
 	border-radius: 50%;
 
@@ -24,19 +25,32 @@ nav.nav-rounded > ul > li:not(.active):hover > a {
 	color: var(--primary);
 }
 
-nav.nav-rounded > a.exit:hover::before {
-	background-color: var(--bg-warn-light);
-}
-
 nav.nav-rounded > ul > li:not(.active):hover > a::before {
 	background-color: var(--bg-primary-light);
+}
+
+nav.nav-rounded > a.exit:hover::before {
+	background-color: var(--bg-warn-light);
 }
 
 nav.nav-rounded > ul > li.active > a {
 	fill: var(--primary);
 	color: var(--primary);
+
+	transition: color 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-nav.nav-rounded > ul > li.active > a::before {
+nav.nav-rounded > ul > div.rounded {
+	content: '';
+	position: absolute;
+	inset: 0 0.5rem;
+
+	height: 2.5rem;
+
 	background-color: var(--bg-primary-alt);
+	border-radius: 50%;
+}
+
+nav.nav-rounded > ul > li:not(.rounded) {
+	z-index: 1;
 }

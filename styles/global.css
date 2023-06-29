@@ -17,8 +17,6 @@ main {
 }
 
 main > h1 {
-	margin-bottom: 2rem;
-
 	font-size: 3rem;
 	font-weight: bold;
 	background: -webkit-linear-gradient(left, var(--primary), var(--accent));
@@ -27,15 +25,25 @@ main > h1 {
 	filter: drop-shadow(3px 3px 10px var(--shadow));
 }
 
+main > h2 {
+	margin-bottom: 2rem;
+
+	color: var(--text-color);
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
 main > ul {
 	display: flex;
 	flex-wrap: wrap;
+	flex-grow: 1;
 	gap: 2rem;
 }
 
 main > ul > li {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	gap: 1rem;
 }
 
@@ -60,6 +68,7 @@ nav {
 
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	gap: 1.25rem;
 
 	width: fit-content;
@@ -72,7 +81,7 @@ nav {
 	box-shadow: 3px 3px 10px 3px var(--shadow);
 }
 
-nav > img.logo {
+nav img.logo {
 	display: block;
 	margin: 0 auto;
 }

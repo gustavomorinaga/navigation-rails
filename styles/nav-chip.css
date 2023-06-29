@@ -42,15 +42,14 @@ nav.nav-chip > ul > li.active {
 nav.nav-chip > ul > li.active > a {
 	fill: var(--primary);
 	color: #ffffff;
-	transition: none;
+	transition: color 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 nav.nav-chip > ul > li.active > a::before {
-	background-color: var(--primary);
-	transition: none;
+	transition: background-color 0.1s ease-in-out;
 }
 
-nav.nav-chip > ul > li.chip {
+nav.nav-chip > ul > div.chip {
 	position: absolute;
 	inset: 0;
 
@@ -60,8 +59,4 @@ nav.nav-chip > ul > li.chip {
 
 	background-color: var(--primary);
 	border-radius: 0 0.5rem 0.5rem 0;
-}
-
-nav.nav-chip > ul > li:not(.chip) {
-	z-index: 1;
 }

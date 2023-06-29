@@ -1,12 +1,40 @@
 nav.nav-badge > ul > li > a {
+	margin-bottom: -1.1rem;
+
 	transition: color 0.2s ease-in-out;
+}
+
+nav.nav-badge > a.exit > span,
+nav.nav-badge > ul > li > a > span {
+	display: grid;
+	grid-template-rows: 0fr;
+	margin: 0 -2rem;
+	padding: 0 0.5rem;
+	opacity: 0;
+
+	color: #ffffff;
+	border-radius: 1rem;
+
+	transition: opacity 0.2s ease-in-out;
+}
+
+nav.nav-badge > a.exit {
+	margin-bottom: -1.1rem;
+}
+
+nav.nav-badge > a.exit > span {
+	background-color: var(--warn);
+}
+
+nav.nav-badge > ul > li > a > span {
+	background-color: var(--primary);
 }
 
 nav.nav-badge > ul > li.active > a {
 	fill: var(--primary);
 	color: var(--primary);
 
-	margin: -0.25rem 0 -0.85rem;
+	margin: -0.25rem 0 -1rem;
 }
 
 nav.nav-badge > ul > li:not(.active):hover > a {
@@ -14,12 +42,8 @@ nav.nav-badge > ul > li:not(.active):hover > a {
 	color: var(--primary);
 }
 
+nav.nav-badge > a.exit:hover > span,
 nav.nav-badge > ul > li.active > a > span {
-	display: block;
-	margin: 0 -1rem;
-	padding: 0 1rem;
-
-	color: #ffffff;
-	background-color: var(--primary);
-	border-radius: 1rem;
+	grid-template-rows: 1fr;
+	opacity: 1;
 }

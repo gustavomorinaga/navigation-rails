@@ -13,11 +13,13 @@ nav.nav-side > ul > li > a::before {
 	width: 0.25rem;
 	height: 100%;
 	margin-right: -1rem;
+	overflow: hidden;
 
 	background-color: transparent;
+	border: 1px solid transparent;
 	border-radius: 1rem 0 0 1rem;
 
-	transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 nav.nav-side > ul > li:not(.active):hover > a {
@@ -36,4 +38,5 @@ nav.nav-side > ul > li.active > a {
 
 nav.nav-side > ul > li.active > a::before {
 	background-color: var(--primary);
+	border-color: var(--primary);
 }

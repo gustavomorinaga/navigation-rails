@@ -9,12 +9,15 @@ nav.nav-dot > ul > li > a::before {
 	position: absolute;
 	inset: auto 0 0 1px;
 
+	aspect-ratio: 1/1;
 	width: 0.3rem;
 	height: 0.3rem;
 	margin: 0 auto;
 
 	background-color: transparent;
 	border-radius: 50%;
+
+	transition: background-color 0.2s ease-in-out;
 }
 
 nav.nav-dot > ul > li:not(.active):hover > a {
