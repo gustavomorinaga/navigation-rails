@@ -20,16 +20,16 @@ nav.nav-rounded > ul > li > a::before {
 	transition: background-color 0.2s ease-in-out;
 }
 
-nav.nav-rounded > ul > li:not(.active):hover > a {
+nav.nav-rounded > ul > li:not(.active):is(:hover, :focus, :active) > a {
 	fill: var(--primary);
 	color: var(--primary);
 }
 
-nav.nav-rounded > ul > li:not(.active):hover > a::before {
+nav.nav-rounded > ul > li:not(.active):is(:hover, :focus, :active) > a::before {
 	background-color: var(--bg-primary-light);
 }
 
-nav.nav-rounded > a.exit:hover::before {
+nav.nav-rounded > a.exit:is(:hover, :focus, :active)::before {
 	background-color: var(--bg-warn-light);
 }
 

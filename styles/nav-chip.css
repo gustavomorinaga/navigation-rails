@@ -22,16 +22,16 @@ nav.nav-chip > ul > li > a::before {
 	transition: background-color 0.2s ease-in-out;
 }
 
-nav.nav-chip > ul > li:not(.active):hover > a {
+nav.nav-chip > ul > li:not(.active):is(:hover, :focus, :active) > a {
 	fill: var(--primary);
 	color: var(--primary);
 }
 
-nav.nav-chip > a.exit:hover::before {
+nav.nav-chip > a.exit:is(:hover, :focus, :active)::before {
 	background-color: var(--bg-warn-light);
 }
 
-nav.nav-chip > ul > li:not(.active):hover > a::before {
+nav.nav-chip > ul > li:not(.active):is(:hover, :focus, :active) > a::before {
 	background-color: var(--bg-primary-light);
 }
 

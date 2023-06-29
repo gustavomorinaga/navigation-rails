@@ -20,12 +20,12 @@ nav.nav-label > ul > li.active > a {
 	margin: -0.25rem 0 -0.85rem;
 }
 
-nav.nav-label > ul > li:not(.active):hover > a {
+nav.nav-label > ul > li:not(.active):is(:hover, :focus, :active) > a {
 	fill: var(--primary);
 	color: var(--primary);
 }
 
-nav.nav-label > a.exit:hover > span,
+nav.nav-label > a.exit:is(:hover, :focus, :active) > span,
 nav.nav-label > ul > li.active > a > span {
 	grid-template-rows: 1fr;
 	opacity: 1;

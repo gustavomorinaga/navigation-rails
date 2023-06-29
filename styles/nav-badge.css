@@ -37,12 +37,12 @@ nav.nav-badge > ul > li.active > a {
 	margin: -0.25rem 0 -1rem;
 }
 
-nav.nav-badge > ul > li:not(.active):hover > a {
+nav.nav-badge > ul > li:not(.active):is(:hover, :focus, :active) > a {
 	fill: var(--primary);
 	color: var(--primary);
 }
 
-nav.nav-badge > a.exit:hover > span,
+nav.nav-badge > a.exit:is(:hover, :focus, :active) > span,
 nav.nav-badge > ul > li.active > a > span {
 	grid-template-rows: 1fr;
 	opacity: 1;

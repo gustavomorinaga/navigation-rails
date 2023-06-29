@@ -5,7 +5,7 @@ nav.nav-ghost > ul > li > a {
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-nav.nav-ghost > ul > li:not(.active):hover > a {
+nav.nav-ghost > ul > li:not(.active):is(:hover, :focus, :active) > a {
 	fill: var(--primary);
 	color: var(--primary);
 
@@ -25,6 +25,6 @@ nav.nav-ghost > a.exit {
 	transition: background-color 0.2s ease-in-out;
 }
 
-nav.nav-ghost > a.exit:hover {
+nav.nav-ghost > a.exit:is(:hover, :focus, :active) {
 	background-color: var(--bg-warn-light);
 }

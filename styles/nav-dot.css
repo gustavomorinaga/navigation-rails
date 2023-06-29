@@ -20,7 +20,7 @@ nav.nav-dot > ul > li > a::before {
 	transition: background-color 0.2s ease-in-out;
 }
 
-nav.nav-dot > ul > li:not(.active):hover > a {
+nav.nav-dot > ul > li:not(.active):is(:hover, :focus, :active) > a {
 	fill: var(--primary);
 	color: var(--primary);
 }

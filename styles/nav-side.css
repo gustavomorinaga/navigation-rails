@@ -22,12 +22,12 @@ nav.nav-side > ul > li > a::before {
 	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-nav.nav-side > ul > li:not(.active):hover > a {
+nav.nav-side > ul > li:not(.active):is(:hover, :focus, :active) > a {
 	fill: var(--primary);
 	color: var(--primary);
 }
 
-nav.nav-side > ul > li:not(.active):hover > a::before {
+nav.nav-side > ul > li:not(.active):is(:hover, :focus, :active) > a::before {
 	background-color: var(--bg-primary-alt);
 }
 

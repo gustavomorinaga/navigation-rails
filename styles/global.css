@@ -7,18 +7,19 @@ main {
 	justify-content: center;
 
 	max-width: 1024px;
-	min-height: 100vh;
 	margin: 0 auto;
 	padding: 2rem;
 
-	font-family: 'Roboto', sans-serif;
+	text-align: center;
 
 	pointer-events: none;
 }
 
 main > h1 {
+	margin-bottom: 1rem;
 	font-size: 3rem;
 	font-weight: bold;
+	line-height: normal;
 	background: -webkit-linear-gradient(left, var(--primary), var(--accent));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -31,10 +32,12 @@ main > h2 {
 	color: var(--text-color);
 	font-size: 1.75rem;
 	font-weight: bold;
+	line-height: normal;
 }
 
 main > ul {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	flex-grow: 1;
 	gap: 2rem;
@@ -43,14 +46,16 @@ main > ul {
 main > ul > li {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
 	gap: 1rem;
+	height: 100%;
+	min-height: 40rem;
 }
 
 main > ul > li > span.count {
 	display: grid;
 	place-items: center;
 
+	aspect-ratio: 1/1;
 	width: fit-content;
 	height: fit-content;
 	margin: 0 auto;
@@ -162,6 +167,14 @@ nav > ul > li > a > span {
 	display: none;
 	font-size: 0.75rem;
 	font-weight: bold;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 1rem;
 }
 
 @keyframes pulse {
